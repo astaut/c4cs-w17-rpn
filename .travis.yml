@@ -5,7 +5,7 @@ python:
 install:
   - pip install codecov
 
-script: coverage python3 -m unittest
+script: python3 -m unittest
 
 after_success:
   - codecov
