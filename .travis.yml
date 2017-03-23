@@ -2,7 +2,10 @@ language: python
 python:
   - "3.5"
 
-install: "pip install codecov"
+install:
+  -"pip install codecov"
 
-script: python3 -m unittest
-codecov --token=<01ae3a57-6541-41d0-92f6-c04842d74a7e>
+script: coverage python3 -m unittest
+
+after_success:
+  - codecov
