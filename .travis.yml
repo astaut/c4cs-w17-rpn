@@ -8,4 +8,4 @@ install:
 script: python3 -m unittest
 
 after_success:
-  - codecov
+  - codecov --token=<01ae3a57-6541-41d0-92f6-c04842d74a7e>
